@@ -1,0 +1,23 @@
+{
+    "name": "kh411d/laravel-mandrill-wrapper",
+    "type": "library",
+    "description": "Laravel 4 mandrill wrapper",
+    "keywords": ["mandrill","laravel"],
+    "homepage": "https://github.com/kh411d/laravel-mandrill-wrapper.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khalid Adisendjaja",
+            "email": "contact@khal.web.id"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "mandrill/mandrill":"dev-master",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "psr-0": {"LaravelMandrillWrapper": "src/"}
+    },
+    "minimum-stability": "dev"
+}
