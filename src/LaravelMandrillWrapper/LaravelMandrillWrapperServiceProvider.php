@@ -5,8 +5,6 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 
-use Mandrill\Mandrill;
-
 class LaravelMandrillWrapperServiceProvider extends ServiceProvider {
 
 	/**
@@ -38,7 +36,7 @@ class LaravelMandrillWrapperServiceProvider extends ServiceProvider {
 
 		App::singleton('mandrill.wrapper', function ($app) {
 			$apikey = Config::get('laravel-mandrill-wrapper::apikey');	
-			$mandrill = new Mandrill($apikey);
+			$mandrill = new \Mandrill($apikey);
 			return $mandrill;
 		});
 		
